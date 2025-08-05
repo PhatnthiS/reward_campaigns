@@ -27,6 +27,12 @@ abstract class AppTextStyles {
     color: AppColors.textPrimary,
   );
 
+  static TextStyle get remark => const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: AppColors.textSecondary,
+  );
+
   static TextStyle get buttonText => const TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.bold,

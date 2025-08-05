@@ -101,7 +101,7 @@ abstract class AppLocalizations {
   /// No description provided for @welcomeTitle.
   ///
   /// In en, this message translates to:
-  /// **'Welcome to Reward Campaigns'**
+  /// **'Welcome to\nReward Campaigns'**
   String get welcomeTitle;
 
   /// No description provided for @welcomeSubtitle.

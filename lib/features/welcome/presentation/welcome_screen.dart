@@ -12,6 +12,7 @@ class WelcomeScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 24),
         child: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Spacer(flex: 2),
@@ -37,22 +38,73 @@ class WelcomeScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
 
-              Spacer(flex: 3),
+              SizedBox(height: 32),
 
-              SizedBox(
-                width: double.infinity,
+              Text(
+                context.loc.welcomeRemark,
+                style: AppTextStyles.remark,
+                textAlign: TextAlign.center,
+              ),
+
+              Text(
+                context.loc.welcomeRemarkSubtitle,
+                style: AppTextStyles.remark,
+                textAlign: TextAlign.center,
+              ),
+
+              SizedBox(height: 16),
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 32),
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    side: BorderSide(color: AppColors.lightBlue, width: 2),
+                    backgroundColor: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
                     elevation: 4,
-                    backgroundColor: AppColors.lightYellow,
                   ),
+                  child: Text(context.loc.english),
+                ),
+              ),
 
-                  child: Text(context.loc.getStarted, style: AppTextStyles.buttonText),
+              SizedBox(height: 16),
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 32),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    side: BorderSide(color: AppColors.lightBlue, width: 2),
+                    backgroundColor: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    elevation: 4,
+                  ),
+                  child: Text(context.loc.thai),
+                ),
+              ),
+
+              Spacer(flex: 3),
+
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  elevation: 4,
+                  backgroundColor: AppColors.lightYellow,
+                ),
+                child: Text(
+                  context.loc.getStarted,
+                  style: AppTextStyles.buttonText,
                 ),
               ),
 
