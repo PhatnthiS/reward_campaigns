@@ -9,7 +9,7 @@ class AppLocalizationsTh extends AppLocalizations {
   AppLocalizationsTh([String locale = 'th']) : super(locale);
 
   @override
-  String get welcomeTitle => 'ยินดีต้อนรับสู่แคมเปญรางวัล';
+  String get welcomeTitle => 'ยินดีต้อนรับสู่\nแคมเปญรางวัล';
 
   @override
   String get welcomeSubtitle => 'สำรวจข้อเสนอและรางวัลที่มีให้';
