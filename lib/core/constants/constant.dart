@@ -1,3 +1,3 @@
-class AppConstants {
+abstract class AppConstants {
   static const String appTitle = 'Reward Campaigns';
 }

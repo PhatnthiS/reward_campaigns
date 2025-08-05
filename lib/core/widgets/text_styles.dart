@@ -30,6 +30,6 @@ abstract class AppTextStyles {
   static TextStyle get buttonText => const TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.bold,
-    color: AppColors.textOnPrimary,
+    color: AppColors.darkBlue,
   );
 }

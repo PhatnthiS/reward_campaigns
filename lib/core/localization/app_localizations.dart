@@ -98,11 +98,47 @@ abstract class AppLocalizations {
     Locale('th'),
   ];
 
-  /// No description provided for @helloWorld.
+  /// No description provided for @welcomeTitle.
   ///
   /// In en, this message translates to:
-  /// **'Hello World!'**
-  String get helloWorld;
+  /// **'Welcome to Reward Campaigns'**
+  String get welcomeTitle;
+
+  /// No description provided for @welcomeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore available offers and rewards.'**
+  String get welcomeSubtitle;
+
+  /// No description provided for @welcomeRemark.
+  ///
+  /// In en, this message translates to:
+  /// **'Before we get started, please choose your language.'**
+  String get welcomeRemark;
+
+  /// No description provided for @welcomeRemarkSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You can change it later in the settings menu.'**
+  String get welcomeRemarkSubtitle;
+
+  /// No description provided for @getStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'Get started'**
+  String get getStarted;
+
+  /// No description provided for @english.
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get english;
+
+  /// No description provided for @thai.
+  ///
+  /// In en, this message translates to:
+  /// **'Thai'**
+  String get thai;
 }
 
 class _AppLocalizationsDelegate

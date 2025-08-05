@@ -9,5 +9,24 @@ class AppLocalizationsTh extends AppLocalizations {
   AppLocalizationsTh([String locale = 'th']) : super(locale);
 
   @override
-  String get helloWorld => 'สวัสดี!';
+  String get welcomeTitle => 'ยินดีต้อนรับสู่แคมเปญรางวัล';
+
+  @override
+  String get welcomeSubtitle => 'สำรวจข้อเสนอและรางวัลที่มีให้';
+
+  @override
+  String get welcomeRemark => 'ก่อนเริ่มใช้งาน กรุณาเลือกภาษาของคุณ';
+
+  @override
+  String get welcomeRemarkSubtitle =>
+      'คุณสามารถเปลี่ยนภาษาได้ภายหลังในเมนูการตั้งค่า';
+
+  @override
+  String get getStarted => 'Get started';
+
+  @override
+  String get english => 'อังกฤษ';
+
+  @override
+  String get thai => 'ไทย';
 }

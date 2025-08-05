@@ -1,3 +1,9 @@
 {
-  "helloWorld": "Hello World!"
+  "welcomeTitle": "Welcome to Reward Campaigns",
+  "welcomeSubtitle": "Explore available offers and rewards.",
+  "welcomeRemark": "Before we get started, please choose your language.",
+  "welcomeRemarkSubtitle": "You can change it later in the settings menu.",
+  "getStarted": "Get started",
+  "english": "English",
+  "thai": "Thai"
 }
