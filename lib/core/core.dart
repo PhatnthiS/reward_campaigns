@@ -1,2 +1,2 @@
-export 'constants/constant.dart';
+export 'constants/constants.dart';
 export 'route/route.dart';
