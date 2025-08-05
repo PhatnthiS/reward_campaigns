@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       title: AppConstants.appTitle,
       locale: context.locale,
       routerConfig: router,
-      theme: ThemeData(primarySwatch: Colors.indigo),
+      theme: ThemeData(fontFamily: 'Kanit'),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
     );

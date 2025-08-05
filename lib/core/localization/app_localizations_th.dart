@@ -22,7 +22,7 @@ class AppLocalizationsTh extends AppLocalizations {
       'คุณสามารถเปลี่ยนภาษาได้ภายหลังในเมนูการตั้งค่า';
 
   @override
-  String get getStarted => 'Get started';
+  String get getStarted => 'เริ่มต้นใช้งาน';
 
   @override
   String get english => 'อังกฤษ';
