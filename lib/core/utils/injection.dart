@@ -24,6 +24,7 @@ Future<void> initDependencies() async {
   // Use Cases
   getIt.registerLazySingleton(() => CheckFirstLaunchUseCase(getIt()));
   getIt.registerLazySingleton(() => CompleteOnboardingUseCase(getIt()));
+  getIt.registerLazySingleton(() => LanguageUseCase(getIt()));
 
   // Blocs
   getIt.registerFactory(() => SplashBloc(checkFirstLaunchUseCase: getIt()));

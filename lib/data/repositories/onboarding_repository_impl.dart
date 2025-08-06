@@ -1,3 +1,4 @@
+import 'package:reward_campaigns/core/constants/constants.dart';
 import 'package:reward_campaigns/core/utils/shared_prefs.dart';
 import 'repositories.dart';
 
@@ -14,5 +15,15 @@ class OnboardingRepositoryImpl implements OnboardingRepository {
   @override
   Future<void> completeOnboarding() async {
     await _prefsService.setFirstLaunch(true);
+  }
+
+  @override
+  Future<String> getLanguage() async {
+    return _prefsService.getLanguage;
+  }
+
+  @override
+  Future<void> setLanguage(Language value) async {
+    await _prefsService.setLanguage(value);
   }
 }
