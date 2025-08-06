@@ -1,8 +1,14 @@
-import 'package:go_router/go_router.dart';
 import 'package:reward_campaigns/features/features.dart';
 
 final GoRouter router = GoRouter(
   routes: [
+    GoRoute(
+      path: AppRoutes.splash,
+      builder: (context, state) =>BlocProvider(
+        create: (_) => getIt<SplashBloc>()..add(CheckFirstLaunchEvent()),
+        child: const SplashScreen(),
+      ),
+    ),
     GoRoute(
       path: AppRoutes.welcome,
       builder: (context, state) => BlocProvider(
