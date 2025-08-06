@@ -8,3 +8,7 @@ abstract class AppRoutes {
   static const String welcome = '/';
   static const String home = '/home';
 }
+
+abstract class SharedPrefsKeys {
+  static const String firstLaunch = 'firstLaunch';
+}
