@@ -7,6 +7,7 @@ final GoRouter router = GoRouter(
       path: AppRoutes.welcome,
       builder: (context, state) => WelcomeScreen(),
     ),
+    GoRoute(path: AppRoutes.home, builder: (context, state) => HomeScreen()),
     // GoRoute(path: '/member', builder: (context, state) => MembershipScreen()),
     // GoRoute(path: '/refer', builder: (context, state) => ReferFriendScreen()),
     // GoRoute(path: '/history', builder: (context, state) => HistoryScreen()),

@@ -96,7 +96,9 @@ class WelcomeScreen extends StatelessWidget {
               Spacer(flex: 3),
 
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.go(AppRoutes.home);
+                },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(

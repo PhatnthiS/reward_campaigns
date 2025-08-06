@@ -1,0 +1,14 @@
+import 'package:reward_campaigns/features/features.dart';
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Home Page'),
+      )
+    );
+  }
+}
