@@ -27,6 +27,9 @@ Future<void> initDependencies() async {
   getIt.registerLazySingleton(() => LanguageUseCase(getIt()));
 
   // Blocs
-  getIt.registerFactory(() => SplashBloc(checkFirstLaunchUseCase: getIt()));
-  getIt.registerFactory(() => WelcomeBloc(completeWelcomeUseCase: getIt()));
+  getIt.registerFactory(() => SplashBloc(languageUseCase: getIt(),checkFirstLaunchUseCase: getIt()));
+  getIt.registerFactory(
+    () =>
+        WelcomeBloc(languageUseCase: getIt(), completeWelcomeUseCase: getIt()),
+  );
 }

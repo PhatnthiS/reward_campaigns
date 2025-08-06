@@ -5,9 +5,13 @@ part 'splash_event.dart';
 part 'splash_state.dart';
 
 class SplashBloc extends Bloc<SplashEvent, SplashState> {
+  final LanguageUseCase languageUseCase;
   final CheckFirstLaunchUseCase checkFirstLaunchUseCase;
 
-  SplashBloc({required this.checkFirstLaunchUseCase}) : super(SplashInitial()) {
+  SplashBloc({
+    required this.languageUseCase,
+    required this.checkFirstLaunchUseCase,
+  }) : super(SplashInitial()) {
     on<CheckFirstLaunchEvent>((event, emit) async {
       final isFirstLaunch = await checkFirstLaunchUseCase();
       if (isFirstLaunch) {
@@ -15,6 +19,11 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
       } else {
         emit(SkipWelcomeScreen());
       }
+    });
+
+    on<GetLanguageEvent>((event, emit) async {
+     String language =  await languageUseCase.getLanguage();
+      emit(GetLanguage(language));
     });
   }
 }

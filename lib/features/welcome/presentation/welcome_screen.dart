@@ -57,7 +57,10 @@ class WelcomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 32),
                 child: ElevatedButton(
                   onPressed: () {
-                    context.provider.setLocale(Locale(AppConstants.languageEN));
+                    context.provider.setLocale(Locale(Language.EN.code));
+                    context.read<WelcomeBloc>().add(
+                      SetLanguageEvent(Language.EN),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     side: BorderSide(color: AppColors.lightBlue, width: 2),
@@ -78,7 +81,10 @@ class WelcomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 32),
                 child: ElevatedButton(
                   onPressed: () {
-                    context.provider.setLocale(Locale(AppConstants.languageTH));
+                    context.provider.setLocale(Locale(Language.TH.code));
+                    context.read<WelcomeBloc>().add(
+                      SetLanguageEvent(Language.TH),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     side: BorderSide(color: AppColors.lightBlue, width: 2),

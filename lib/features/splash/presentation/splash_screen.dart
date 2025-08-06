@@ -11,16 +11,23 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
+    context.read<SplashBloc>().add(GetLanguageEvent());
   }
 
   @override
   Widget build(BuildContext context) {
     return BlocListener<SplashBloc, SplashState>(
       listener: (context, state) {
-        if (state is ShowWelcomeScreen) {
-          context.go('/welcome');
-        } else if (state is SkipWelcomeScreen) {
-          context.go('/home');
+        switch (state) {
+          case ShowWelcomeScreen():
+            context.go('/welcome');
+            break;
+          case SkipWelcomeScreen():
+            context.go('/home');
+            break;
+          case GetLanguage():
+            context.provider.setLocale(Locale(state.language));
+            break;
         }
       },
       child: const Scaffold(body: Center(child: CircularProgressIndicator())),
