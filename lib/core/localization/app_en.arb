@@ -5,5 +5,9 @@
   "welcomeRemarkSubtitle": "You can change it later in the settings menu.",
   "getStarted": "Get started",
   "english": "English",
-  "thai": "Thai"
+  "thai": "Thai",
+  "campaigns": "Reward",
+  "members": "Membership",
+  "refer": "Refer Friends",
+  "points": "Point"
 }

@@ -139,6 +139,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Thai'**
   String get thai;
+
+  /// No description provided for @campaigns.
+  ///
+  /// In en, this message translates to:
+  /// **'Reward'**
+  String get campaigns;
+
+  /// No description provided for @members.
+  ///
+  /// In en, this message translates to:
+  /// **'Membership'**
+  String get members;
+
+  /// No description provided for @refer.
+  ///
+  /// In en, this message translates to:
+  /// **'Refer Friends'**
+  String get refer;
+
+  /// No description provided for @points.
+  ///
+  /// In en, this message translates to:
+  /// **'Point'**
+  String get points;
 }
 
 class _AppLocalizationsDelegate

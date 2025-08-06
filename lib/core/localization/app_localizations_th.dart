@@ -29,4 +29,16 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get thai => 'ไทย';
+
+  @override
+  String get campaigns => 'รางวัล';
+
+  @override
+  String get members => 'สมาชิก';
+
+  @override
+  String get refer => 'แนะนำเพื่อน';
+
+  @override
+  String get points => 'คะแนน';
 }

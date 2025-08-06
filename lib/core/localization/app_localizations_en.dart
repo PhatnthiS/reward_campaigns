@@ -30,4 +30,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get thai => 'Thai';
+
+  @override
+  String get campaigns => 'Reward';
+
+  @override
+  String get members => 'Membership';
+
+  @override
+  String get refer => 'Refer Friends';
+
+  @override
+  String get points => 'Point';
 }
