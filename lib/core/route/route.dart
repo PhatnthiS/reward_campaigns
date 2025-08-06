@@ -5,7 +5,10 @@ final GoRouter router = GoRouter(
   routes: [
     GoRoute(
       path: AppRoutes.welcome,
-      builder: (context, state) => WelcomeScreen(),
+      builder: (context, state) => BlocProvider(
+        create: (_) => getIt<WelcomeBloc>(),
+        child: const WelcomeScreen(),
+      ),
     ),
     GoRoute(path: AppRoutes.home, builder: (context, state) => HomeScreen()),
     // GoRoute(path: '/member', builder: (context, state) => MembershipScreen()),

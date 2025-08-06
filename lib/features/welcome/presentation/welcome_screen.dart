@@ -97,6 +97,7 @@ class WelcomeScreen extends StatelessWidget {
 
               ElevatedButton(
                 onPressed: () {
+                  context.read<WelcomeBloc>().add(CompleteOnboardingEvent());
                   context.go(AppRoutes.home);
                 },
                 style: ElevatedButton.styleFrom(
