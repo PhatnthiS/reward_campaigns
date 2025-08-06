@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:reward_campaigns/core/constants/constant.dart';
 import 'package:reward_campaigns/core/route/route.dart';
-import 'package:reward_campaigns/core/utils/extensions.dart';
 import 'core/localization/app_localizations.dart';
-import 'core/utils/locale_provider.dart';
+import 'features/features.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initDependencies();
+
   runApp(
     ChangeNotifierProvider(
       create: (_) => LocaleProvider(),
