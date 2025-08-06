@@ -1,5 +1,4 @@
-import 'package:reward_campaigns/core/utils/extensions.dart';
-import 'package:reward_campaigns/features/welcome/presentation/presentation.dart';
+import 'package:reward_campaigns/features/features.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
