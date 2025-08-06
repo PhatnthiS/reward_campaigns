@@ -1,6 +1,10 @@
 export 'welcome/welcome.dart';
 export 'home/home.dart';
 export 'splash/splash.dart';
+export 'campaigns/campaigns.dart';
+export 'members/members.dart';
+export 'point_tracking/point_tracking.dart';
+export 'refer_friends/refer_friends.dart';
 
 export 'package:reward_campaigns/core/utils/utils.dart';
 export 'package:reward_campaigns/core/widgets/widgets.dart';
