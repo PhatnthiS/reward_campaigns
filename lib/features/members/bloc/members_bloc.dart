@@ -16,14 +16,18 @@ class MembersBloc extends Bloc<MembersEvent, MembersState> {
   }) : super(MembersInitial()) {
     on<LoadMemberEvent>((event, emit) async {
       emit(MembersLoading());
-      final isMember = await checkIsMemberUseCase();
-      final userName = await getUsernameUseCase();
-
-      if (isMember) {
-        emit(MembersLoaded(userName, isMember));
-      } else {
-        emit(MembersLoaded(null, isMember));
-      }
+      await _loadMembershipStatus(emit);
     });
+    on<JoinMemberEvent>((event, emit) async {
+      emit(MembersLoading());
+      await joinMemberUseCase(event.username);
+      await _loadMembershipStatus(emit);
+    });
+  }
+
+  Future<void> _loadMembershipStatus(Emitter<MembersState> emit) async {
+    final isMember = await checkIsMemberUseCase();
+    final userName = isMember ? await getUsernameUseCase() : '';
+    emit(MembersLoaded(userName, isMember));
   }
 }

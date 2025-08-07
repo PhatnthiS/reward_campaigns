@@ -1,4 +1,3 @@
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reward_campaigns/features/features.dart';
 
 class MembersScreen extends StatefulWidget {
@@ -9,27 +8,9 @@ class MembersScreen extends StatefulWidget {
 }
 
 class MembershipScreenState extends State<MembersScreen> {
-  bool _isMember = false;
-
   @override
   void initState() {
     super.initState();
-    _loadMembershipState();
-  }
-
-  Future<void> _loadMembershipState() async {
-    final prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _isMember = prefs.getBool('isMember') ?? false;
-    });
-  }
-
-  Future<void> _joinMembership() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('isMember', true);
-    setState(() {
-      _isMember = true;
-    });
   }
 
   @override
@@ -47,53 +28,67 @@ class MembershipScreenState extends State<MembersScreen> {
           if (state is MembersLoaded) {
             return Scaffold(
               backgroundColor: Colors.transparent,
-              body: SingleChildScrollView(
+              body: Padding(
                 padding: const EdgeInsets.all(24),
-                child: Column(
-                  children: [
-                    const SizedBox(height: 24),
-                    Icon(
-                      Icons.workspace_premium,
-                      size: 100,
-                      color: AppColors.darkBlue,
-                    ),
-                    const SizedBox(height: 20),
-                    Text(
-                      state.isMember
-                          ? context.loc.membersTitle
-                          : context.loc.non_member_title,
-                      style: AppTextStyles.heading2,
-
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 10),
-                    Text(
-                      state.isMember
-                          ? context.loc.member_description
-                          : context.loc.non_member_description,
-                      style: AppTextStyles.bodyText,
-
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 40),
-                    if (!state.isMember)
-                      ElevatedButton.icon(
-                        onPressed: _joinMembership,
-                        icon: Icon(Icons.check_circle),
-                        label: Text(context.loc.join_now),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: AppColors.lightGreen,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 40,
-                            vertical: 14,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(24),
-                          ),
-                          textStyle: AppTextStyles.buttonText,
-                        ),
+                child: Center(
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 24),
+                      Icon(
+                        state.isMember
+                            ? Icons.stars_rounded
+                            : Icons.workspace_premium,
+                        size: 100,
+                        color: state.isMember
+                            ? AppColors.yellow
+                            : AppColors.darkBlue,
                       ),
-                  ],
+                      const SizedBox(height: 20),
+                      Text(
+                        state.isMember
+                            ? context.loc.member_title(state.userName)
+                            : context.loc.non_member_title,
+                        style: AppTextStyles.heading2,
+
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        state.isMember
+                            ? context.loc.member_description
+                            : context.loc.non_member_description,
+                        style: AppTextStyles.bodyText,
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 40),
+                      if (!state.isMember)
+                        ElevatedButton.icon(
+                          onPressed: () async {
+                            await showSignInPopUp(
+                              context: context,
+                              onJoin: (username) {
+                                context.read<MembersBloc>().add(
+                                  JoinMemberEvent(username),
+                                );
+                              },
+                            );
+                          },
+                          icon: Icon(Icons.check_circle),
+                          label: Text(context.loc.join_now),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: AppColors.lightGreen,
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 40,
+                              vertical: 14,
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            textStyle: AppTextStyles.buttonText,
+                          ),
+                        ),
+                    ],
+                  ),
                 ),
               ),
             );
