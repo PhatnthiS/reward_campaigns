@@ -77,6 +77,39 @@ class CampaignCard extends StatelessWidget {
                 height: 150,
                 width: double.infinity,
                 fit: BoxFit.cover,
+                loadingBuilder:
+                    (
+                      BuildContext context,
+                      Widget child,
+                      ImageChunkEvent? loadingProgress,
+                    ) {
+                      if (loadingProgress == null) return child;
+                      return SizedBox(
+                        height: 150,
+                        child: Center(
+                          child: CircularProgressIndicator(
+                            color: AppColors.secondary,
+                          ),
+                        ),
+                      );
+                    },
+                errorBuilder:
+                    (
+                      BuildContext context,
+                      Object error,
+                      StackTrace? stackTrace,
+                    ) {
+                      return SizedBox(
+                        height: 150,
+                        child: Center(
+                          child: Icon(
+                            Icons.error_outline_outlined,
+                            size: 50,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      );
+                    },
               ),
             ),
             Padding(
