@@ -7,7 +7,10 @@ class MembersInitial extends MembersState {}
 class MembersLoading extends MembersState {}
 
 class MembersLoaded extends MembersState {
-  final String userName;
+  final String? userName;
+  final bool isMember;
 
-  MembersLoaded(this.userName);
+  MembersLoaded(this.userName, this.isMember);
 }
+
+class ShowNonMemberScreen extends MembersState {}

@@ -38,7 +38,7 @@ class MembershipScreenState extends State<MembersScreen> {
       create: (_) => getIt<MembersBloc>()..add(LoadMemberEvent()),
       child: BlocBuilder<MembersBloc, MembersState>(
         builder: (context, state) {
-          if (state is MembersLoading || state is MembersLoading) {
+          if (state is MembersInitial || state is MembersLoading) {
             return const Center(
               child: CircularProgressIndicator(color: AppColors.secondary),
             );
@@ -59,7 +59,7 @@ class MembershipScreenState extends State<MembersScreen> {
                     ),
                     const SizedBox(height: 20),
                     Text(
-                      _isMember
+                      state.isMember
                           ? context.loc.membersTitle
                           : context.loc.non_member_title,
                       style: AppTextStyles.heading2,
@@ -68,7 +68,7 @@ class MembershipScreenState extends State<MembersScreen> {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      _isMember
+                      state.isMember
                           ? context.loc.member_description
                           : context.loc.non_member_description,
                       style: AppTextStyles.bodyText,
@@ -76,7 +76,7 @@ class MembershipScreenState extends State<MembersScreen> {
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 40),
-                    if (!_isMember)
+                    if (!state.isMember)
                       ElevatedButton.icon(
                         onPressed: _joinMembership,
                         icon: Icon(Icons.check_circle),

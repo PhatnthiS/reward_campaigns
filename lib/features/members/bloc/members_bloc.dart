@@ -16,10 +16,14 @@ class MembersBloc extends Bloc<MembersEvent, MembersState> {
   }) : super(MembersInitial()) {
     on<LoadMemberEvent>((event, emit) async {
       emit(MembersLoading());
-      await Future.delayed(const Duration(milliseconds: 500));
+      final isMember = await checkIsMemberUseCase();
+      final userName = await getUsernameUseCase();
 
-      const username = "John Doe";
-      emit(MembersLoaded(username));
+      if (isMember) {
+        emit(MembersLoaded(userName, isMember));
+      } else {
+        emit(MembersLoaded(null, isMember));
+      }
     });
   }
 }
