@@ -37,5 +37,9 @@
 
   "sign_in_title": "กรุณากรอกชื่อของคุณ",
   "username_hint": "ชื่อผู้ใช้",
-  "cancel": "ยกเลิก"
+  "cancel": "ยกเลิก",
+
+  "current_points": "คะแนนปัจจุบัน",
+  "points_value": "{currentPoints} คะแนน",
+  "transaction_history": "ประวัติการทำรายการ"
 }

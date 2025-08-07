@@ -295,6 +295,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Cancel'**
   String get cancel;
+
+  /// No description provided for @current_points.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Points'**
+  String get current_points;
+
+  /// No description provided for @points_value.
+  ///
+  /// In en, this message translates to:
+  /// **'{currentPoints} pts'**
+  String points_value(Object currentPoints);
+
+  /// No description provided for @transaction_history.
+  ///
+  /// In en, this message translates to:
+  /// **'Transaction History'**
+  String get transaction_history;
 }
 
 class _AppLocalizationsDelegate
