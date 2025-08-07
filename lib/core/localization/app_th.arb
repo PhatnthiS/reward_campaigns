@@ -19,5 +19,12 @@
   "campaign_join_now": "แคมเปญเข้าร่วมตอนนี้",
   "campaign_subscribe": "แคมเปญการสมัครสมาชิก",
   "campaign_redeem": "แคมเปญแลกคะแนน",
-  "seeAll": "ดูทั้งหมด"
+  "seeAll": "ดูทั้งหมด",
+
+  "copied_to_clipboard": "คัดลอกไปยังคลิปบอร์ดแล้ว",
+  "share_referral_text": "เข้าร่วมแอปด้วยโค้ดแนะนำของฉัน: {referralLink}",
+  "share": "แชร์",
+  "copy": "คัดลอก",
+  "share_referral_description": "แชร์โค้ดแนะนำของคุณและรับรางวัลเมื่อเพื่อนเข้าร่วม!",
+  "share_referral_title": "ชวนเพื่อนของคุณ"
 }

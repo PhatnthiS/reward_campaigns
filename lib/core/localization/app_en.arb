@@ -20,5 +20,12 @@
   "campaign_join_now": "Join Now Campaign",
   "campaign_subscribe": "Subscribe Campaigns",
   "campaign_redeem": "Redeem Point Campaign",
-  "seeAll": "See All"
+  "seeAll": "See All",
+
+  "copied_to_clipboard": "Copied to clipboard",
+  "share_referral_text": "Join the app with my referral: {referralLink}",
+  "share": "Share",
+  "copy": "Copy",
+  "share_referral_description": "Share your referral code and earn rewards when they join!",
+  "share_referral_title": "Invite your friends"
 }
