@@ -27,5 +27,18 @@
   "share": "Share",
   "copy": "Copy",
   "share_referral_description": "Share your referral code and earn rewards when they join!",
-  "share_referral_title": "Invite your friends"
+  "share_referral_title": "Invite your friends",
+
+
+  "member_description": "Thank you for joining our community.",
+  "non_member_description": "Join now to unlock exclusive features and stay connected!",
+  "member_title": "Welcome Back, {username}",
+  "non_member_title": "Become a Member!",
+  "join_now": "Join Now",
+
+
+  "sign_in_title": "Enter your name",
+  "username_hint": "Username",
+  "cancel": "Cancel"
+
 }

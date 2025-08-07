@@ -18,4 +18,13 @@ class SharedPrefsService {
   Future<void> setLanguage(Language value) async {
     await prefs.setString(SharedPrefsKeys.language, value.code);
   }
+
+  bool get isMember => prefs.getBool(SharedPrefsKeys.member) ?? false;
+
+  Future<void> joinMember(String name) async {
+    await prefs.setBool(SharedPrefsKeys.member, true);
+    await prefs.setString(SharedPrefsKeys.username, name);
+  }
+
+  String get getUsername => prefs.getString(SharedPrefsKeys.username) ?? '';
 }

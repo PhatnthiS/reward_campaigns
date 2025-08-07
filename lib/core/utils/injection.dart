@@ -23,12 +23,18 @@ Future<void> initDependencies() async {
   getIt.registerLazySingleton<CampaignRepository>(
     () => CampaignRepositoryImpl(),
   );
+  getIt.registerLazySingleton<MemberRepository>(
+    () => MemberRepositoryImpl(getIt<SharedPrefsService>()),
+  );
 
   // Use Cases
   getIt.registerLazySingleton(() => CheckFirstLaunchUseCase(getIt()));
   getIt.registerLazySingleton(() => CompleteOnboardingUseCase(getIt()));
   getIt.registerLazySingleton(() => LanguageUseCase(getIt()));
   getIt.registerLazySingleton(() => GetCampaignsUseCase(getIt()));
+  getIt.registerLazySingleton(() => CheckIsMemberUseCase(getIt()));
+  getIt.registerLazySingleton(() => JoinMemberUseCase(getIt()));
+  getIt.registerLazySingleton(() => GetUsernameUseCase(getIt()));
 
   // Blocs
   getIt.registerFactory(
@@ -41,4 +47,12 @@ Future<void> initDependencies() async {
   );
 
   getIt.registerFactory(() => CampaignsBloc(getCampaignsUseCase: getIt()));
+
+  getIt.registerFactory(
+    () => MembersBloc(
+      checkIsMemberUseCase: getIt(),
+      getUsernameUseCase: getIt(),
+      joinMemberUseCase: getIt(),
+    ),
+  );
 }

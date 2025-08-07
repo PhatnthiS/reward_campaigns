@@ -86,4 +86,31 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get share_referral_title => 'ชวนเพื่อนของคุณ';
+
+  @override
+  String get member_description => 'ขอบคุณที่เข้าร่วมชุมชนของเรา';
+
+  @override
+  String get non_member_description =>
+      'เข้าร่วมตอนนี้เพื่อปลดล็อกฟีเจอร์พิเศษและเชื่อมต่อกับเรา!';
+
+  @override
+  String member_title(Object username) {
+    return 'ยินดีต้อนรับกลับ, $username';
+  }
+
+  @override
+  String get non_member_title => 'เข้าร่วมเป็นสมาชิก!';
+
+  @override
+  String get join_now => 'เข้าร่วมตอนนี้';
+
+  @override
+  String get sign_in_title => 'กรุณากรอกชื่อของคุณ';
+
+  @override
+  String get username_hint => 'ชื่อผู้ใช้';
+
+  @override
+  String get cancel => 'ยกเลิก';
 }
