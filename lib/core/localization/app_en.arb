@@ -39,6 +39,10 @@
 
   "sign_in_title": "Enter your name",
   "username_hint": "Username",
-  "cancel": "Cancel"
+  "cancel": "Cancel",
+
+  "current_points": "Current Points",
+  "points_value": "{currentPoints} pts",
+  "transaction_history": "Transaction History"
 
 }

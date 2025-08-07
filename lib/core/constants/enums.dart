@@ -25,3 +25,15 @@ enum CTAType {
   @JsonValue('redeem')
   redeem,
 }
+
+@JsonEnum()
+enum TransactionType {
+  @JsonValue('earn')
+  earn,
+
+  @JsonValue('redeem')
+  redeem,
+
+  @JsonValue('free')
+  free,
+}

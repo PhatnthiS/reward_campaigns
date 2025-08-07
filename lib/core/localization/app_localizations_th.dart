@@ -113,4 +113,15 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get cancel => 'ยกเลิก';
+
+  @override
+  String get current_points => 'คะแนนปัจจุบัน';
+
+  @override
+  String points_value(Object currentPoints) {
+    return '$currentPoints คะแนน';
+  }
+
+  @override
+  String get transaction_history => 'ประวัติการทำรายการ';
 }

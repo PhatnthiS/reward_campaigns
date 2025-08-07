@@ -114,4 +114,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get cancel => 'Cancel';
+
+  @override
+  String get current_points => 'Current Points';
+
+  @override
+  String points_value(Object currentPoints) {
+    return '$currentPoints pts';
+  }
+
+  @override
+  String get transaction_history => 'Transaction History';
 }
