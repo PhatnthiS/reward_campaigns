@@ -66,4 +66,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get seeAll => 'See All';
+
+  @override
+  String get copied_to_clipboard => 'Copied to clipboard';
+
+  @override
+  String share_referral_text(Object referralLink) {
+    return 'Join the app with my referral: $referralLink';
+  }
+
+  @override
+  String get share => 'Share';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get share_referral_description =>
+      'Share your referral code and earn rewards when they join!';
+
+  @override
+  String get share_referral_title => 'Invite your friends';
 }

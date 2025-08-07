@@ -65,4 +65,25 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get seeAll => 'ดูทั้งหมด';
+
+  @override
+  String get copied_to_clipboard => 'คัดลอกไปยังคลิปบอร์ดแล้ว';
+
+  @override
+  String share_referral_text(Object referralLink) {
+    return 'เข้าร่วมแอปด้วยโค้ดแนะนำของฉัน: $referralLink';
+  }
+
+  @override
+  String get share => 'แชร์';
+
+  @override
+  String get copy => 'คัดลอก';
+
+  @override
+  String get share_referral_description =>
+      'แชร์โค้ดแนะนำของคุณและรับรางวัลเมื่อเพื่อนเข้าร่วม!';
+
+  @override
+  String get share_referral_title => 'ชวนเพื่อนของคุณ';
 }

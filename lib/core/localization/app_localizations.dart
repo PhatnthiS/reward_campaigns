@@ -211,6 +211,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See All'**
   String get seeAll;
+
+  /// No description provided for @copied_to_clipboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied to clipboard'**
+  String get copied_to_clipboard;
+
+  /// No description provided for @share_referral_text.
+  ///
+  /// In en, this message translates to:
+  /// **'Join the app with my referral: {referralLink}'**
+  String share_referral_text(Object referralLink);
+
+  /// No description provided for @share.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get share;
+
+  /// No description provided for @copy.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get copy;
+
+  /// No description provided for @share_referral_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your referral code and earn rewards when they join!'**
+  String get share_referral_description;
+
+  /// No description provided for @share_referral_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite your friends'**
+  String get share_referral_title;
 }
 
 class _AppLocalizationsDelegate
