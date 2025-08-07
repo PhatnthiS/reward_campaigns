@@ -9,7 +9,7 @@
     {
       "type": "redeem",
       "description": "Discount Voucher",
-      "pts": -100
+      "pts": 100
     },
     {
       "type": "free",
@@ -24,7 +24,7 @@
     {
       "type": "redeem",
       "description": "Gift Card",
-      "pts": -250
+      "pts": 250
     },
     {
       "type": "free",
@@ -39,7 +39,7 @@
     {
       "type": "redeem",
       "description": "Holiday Promo",
-      "pts": -150
+      "pts": 150
     },
     {
       "type": "free",
@@ -54,7 +54,7 @@
     {
       "type": "redeem",
       "description": "Special Offer",
-      "pts": -300
+      "pts": 300
     },
     {
       "type": "free",
@@ -69,7 +69,7 @@
     {
       "type": "redeem",
       "description": "Exclusive Deal",
-      "pts": -180
+      "pts": 180
     }
   ]
 }

@@ -14,7 +14,7 @@ class PointTrackingScreen extends StatelessWidget {
               child: CircularProgressIndicator(color: AppColors.secondary),
             );
           }
-        if (state is PointTrackingLoaded) {
+          if (state is PointTrackingLoaded) {
             return Scaffold(
               backgroundColor: Colors.transparent,
               body: SingleChildScrollView(
@@ -72,8 +72,11 @@ class PointTrackingScreen extends StatelessWidget {
                           ),
                           title: Text(item.description),
                           trailing: Text(
-                            '${item.pts} ${context.loc.points}',
-                            style: AppTextStyles.subtitle,
+                            '${item.pts.formatPoints(item.type)} ${context.loc.points}',
+                            style: AppTextStyles.subtitle.copyWith(
+                              color: item.pts.pointColor(item.type),
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         );
                       },
