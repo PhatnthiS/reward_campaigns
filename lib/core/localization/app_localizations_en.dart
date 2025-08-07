@@ -105,4 +105,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get join_now => 'Join Now';
+
+  @override
+  String get sign_in_title => 'Enter your name';
+
+  @override
+  String get username_hint => 'Username';
+
+  @override
+  String get cancel => 'Cancel';
 }

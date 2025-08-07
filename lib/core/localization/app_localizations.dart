@@ -277,6 +277,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Join Now'**
   String get join_now;
+
+  /// No description provided for @sign_in_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your name'**
+  String get sign_in_title;
+
+  /// No description provided for @username_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Username'**
+  String get username_hint;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
 }
 
 class _AppLocalizationsDelegate

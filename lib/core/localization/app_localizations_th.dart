@@ -104,4 +104,13 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get join_now => 'เข้าร่วมตอนนี้';
+
+  @override
+  String get sign_in_title => 'กรุณากรอกชื่อของคุณ';
+
+  @override
+  String get username_hint => 'ชื่อผู้ใช้';
+
+  @override
+  String get cancel => 'ยกเลิก';
 }
