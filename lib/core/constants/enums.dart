@@ -1,3 +1,5 @@
+import 'package:json_annotation/json_annotation.dart';
+
 enum Language {
   EN('en'),
   TH('th');
@@ -12,4 +14,14 @@ enum Language {
       orElse: () => Language.EN,
     );
   }
+}
+
+@JsonEnum()
+enum CTAType {
+  @JsonValue('join')
+  join,
+  @JsonValue('subscribe')
+  subscribe,
+  @JsonValue('redeem')
+  redeem,
 }

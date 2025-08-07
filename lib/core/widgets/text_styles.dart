@@ -11,7 +11,7 @@ abstract class AppTextStyles {
 
   static TextStyle get heading2 => const TextStyle(
     fontSize: 24,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
     color: AppColors.textPrimary,
   );
 

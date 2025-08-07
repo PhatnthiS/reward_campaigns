@@ -12,6 +12,12 @@ abstract class AppColors {
     end: Alignment.bottomRight,
   );
 
+  static const Gradient backgroundGradient = LinearGradient(
+    colors: [lightYellow, lightGray],
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+  );
+
   // === TEXT COLORS ===
   static const Color textPrimary = Color(0xFF1A1A1A);
   static const Color textSecondary = Color(0xFF4F4F4F);
@@ -43,6 +49,7 @@ abstract class AppColors {
 
   // === Neutrals ===
   static const Color lightGray = Color(0xFFF5F5F5);
+  static const Color darkGray =  Color(0xFF343634);
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
 }

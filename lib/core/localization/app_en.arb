@@ -6,8 +6,19 @@
   "getStarted": "Get started",
   "english": "English",
   "thai": "Thai",
-  "campaigns": "Reward",
+  "campaigns": "Campaign",
   "members": "Membership",
   "refer": "Refer Friends",
-  "points": "Point"
+  "points": "Point",
+
+  "campaignsTitle": "Campaign List",
+  "membersTitle": "Membership",
+  "referTitle": "Refer-a-Friend",
+  "pointsTitle": "Points Tracker",
+
+
+  "campaign_join_now": "Join Now Campaign",
+  "campaign_subscribe": "Subscribe Campaigns",
+  "campaign_redeem": "Redeem Point Campaign",
+  "seeAll": "See All"
 }

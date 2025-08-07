@@ -32,7 +32,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get thai => 'Thai';
 
   @override
-  String get campaigns => 'Reward';
+  String get campaigns => 'Campaign';
 
   @override
   String get members => 'Membership';
@@ -42,4 +42,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get points => 'Point';
+
+  @override
+  String get campaignsTitle => 'Campaign List';
+
+  @override
+  String get membersTitle => 'Membership';
+
+  @override
+  String get referTitle => 'Refer-a-Friend';
+
+  @override
+  String get pointsTitle => 'Points Tracker';
+
+  @override
+  String get campaign_join_now => 'Join Now Campaign';
+
+  @override
+  String get campaign_subscribe => 'Subscribe Campaigns';
+
+  @override
+  String get campaign_redeem => 'Redeem Point Campaign';
+
+  @override
+  String get seeAll => 'See All';
 }

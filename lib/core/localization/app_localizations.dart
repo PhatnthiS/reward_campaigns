@@ -143,7 +143,7 @@ abstract class AppLocalizations {
   /// No description provided for @campaigns.
   ///
   /// In en, this message translates to:
-  /// **'Reward'**
+  /// **'Campaign'**
   String get campaigns;
 
   /// No description provided for @members.
@@ -163,6 +163,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Point'**
   String get points;
+
+  /// No description provided for @campaignsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Campaign List'**
+  String get campaignsTitle;
+
+  /// No description provided for @membersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Membership'**
+  String get membersTitle;
+
+  /// No description provided for @referTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Refer-a-Friend'**
+  String get referTitle;
+
+  /// No description provided for @pointsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Points Tracker'**
+  String get pointsTitle;
+
+  /// No description provided for @campaign_join_now.
+  ///
+  /// In en, this message translates to:
+  /// **'Join Now Campaign'**
+  String get campaign_join_now;
+
+  /// No description provided for @campaign_subscribe.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe Campaigns'**
+  String get campaign_subscribe;
+
+  /// No description provided for @campaign_redeem.
+  ///
+  /// In en, this message translates to:
+  /// **'Redeem Point Campaign'**
+  String get campaign_redeem;
+
+  /// No description provided for @seeAll.
+  ///
+  /// In en, this message translates to:
+  /// **'See All'**
+  String get seeAll;
 }
 
 class _AppLocalizationsDelegate
