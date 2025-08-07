@@ -188,6 +188,24 @@ abstract class AppLocalizations {
   /// **'Points Tracker'**
   String get pointsTitle;
 
+  /// No description provided for @campaign_join_now.
+  ///
+  /// In en, this message translates to:
+  /// **'Join Now Campaign'**
+  String get campaign_join_now;
+
+  /// No description provided for @campaign_subscribe.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe Campaigns'**
+  String get campaign_subscribe;
+
+  /// No description provided for @campaign_redeem.
+  ///
+  /// In en, this message translates to:
+  /// **'Redeem Point Campaign'**
+  String get campaign_redeem;
+
   /// No description provided for @seeAll.
   ///
   /// In en, this message translates to:

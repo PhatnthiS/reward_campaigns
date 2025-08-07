@@ -55,5 +55,14 @@ class AppLocalizationsTh extends AppLocalizations {
   String get pointsTitle => 'ติดตามคะแนน';
 
   @override
+  String get campaign_join_now => 'แคมเปญเข้าร่วมตอนนี้';
+
+  @override
+  String get campaign_subscribe => 'แคมเปญการสมัครสมาชิก';
+
+  @override
+  String get campaign_redeem => 'แคมเปญแลกคะแนน';
+
+  @override
   String get seeAll => 'ดูทั้งหมด';
 }
