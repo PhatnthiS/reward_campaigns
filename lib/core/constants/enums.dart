@@ -1,3 +1,5 @@
+import 'package:json_annotation/json_annotation.dart';
+
 enum Language {
   EN('en'),
   TH('th');
@@ -14,19 +16,12 @@ enum Language {
   }
 }
 
+@JsonEnum()
 enum CTAType {
-  join('Join Now'),
-  subscribe('Subscribe'),
-  redeem('Redeem Point');
-
-  final String label;
-
-  const CTAType(this.label);
-
-  static CTAType fromCode(String code) {
-    return CTAType.values.firstWhere(
-      (e) => e.name.toLowerCase() == code.toLowerCase(),
-      orElse: () => throw ArgumentError('Invalid CTA type: $code'),
-    );
-  }
+  @JsonValue('join')
+  join,
+  @JsonValue('subscribe')
+  subscribe,
+  @JsonValue('redeem')
+  redeem,
 }

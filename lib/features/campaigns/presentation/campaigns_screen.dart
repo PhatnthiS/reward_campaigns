@@ -6,7 +6,7 @@ class CampaignsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => CampaignsBloc()..add(GetCampaignsEvent()),
+      create: (_) => getIt<CampaignsBloc>()..add(GetCampaignsEvent()),
       child: BlocBuilder<CampaignsBloc, CampaignsState>(
         builder: (context, state) {
           if (state is CampaignsLoading) {
