@@ -5,7 +5,15 @@ part 'members_event.dart';
 part 'members_state.dart';
 
 class MembersBloc extends Bloc<MembersEvent, MembersState> {
-  MembersBloc() : super(MembersInitial()) {
+  final GetUsernameUseCase getUsernameUseCase;
+  final JoinMemberUseCase joinMemberUseCase;
+  final CheckIsMemberUseCase checkIsMemberUseCase;
+
+  MembersBloc({
+    required this.getUsernameUseCase,
+    required this.joinMemberUseCase,
+    required this.checkIsMemberUseCase,
+  }) : super(MembersInitial()) {
     on<LoadMemberEvent>((event, emit) async {
       emit(MembersLoading());
       await Future.delayed(const Duration(milliseconds: 500));

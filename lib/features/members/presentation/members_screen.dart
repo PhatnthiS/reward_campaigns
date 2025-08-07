@@ -35,7 +35,7 @@ class MembershipScreenState extends State<MembersScreen> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => MembersBloc()..add(LoadMemberEvent()),
+      create: (_) => getIt<MembersBloc>()..add(LoadMemberEvent()),
       child: BlocBuilder<MembersBloc, MembersState>(
         builder: (context, state) {
           if (state is MembersLoading || state is MembersLoading) {

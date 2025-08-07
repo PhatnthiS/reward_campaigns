@@ -15,4 +15,6 @@ abstract class AppRoutes {
 abstract class SharedPrefsKeys {
   static const String firstLaunch = 'firstLaunch';
   static const String language = 'lang';
+  static const String member = 'member';
+  static const String username = 'username';
 }
