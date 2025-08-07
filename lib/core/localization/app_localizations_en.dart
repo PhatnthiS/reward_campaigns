@@ -87,4 +87,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get share_referral_title => 'Invite your friends';
+
+  @override
+  String get member_description => 'Thank you for joining our community.';
+
+  @override
+  String get non_member_description =>
+      'Join now to unlock exclusive features and stay connected!';
+
+  @override
+  String member_title(Object username) {
+    return 'Welcome Back, $username';
+  }
+
+  @override
+  String get non_member_title => 'Become a Member!';
+
+  @override
+  String get join_now => 'Join Now';
 }

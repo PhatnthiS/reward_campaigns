@@ -60,8 +60,8 @@ class MembershipScreenState extends State<MembersScreen> {
                     const SizedBox(height: 20),
                     Text(
                       _isMember
-                          ? 'Welcome Back, Member! 🎉'
-                          : 'Become a Member!',
+                          ? context.loc.membersTitle
+                          : context.loc.non_member_title,
                       style: AppTextStyles.heading2,
 
                       textAlign: TextAlign.center,
@@ -69,8 +69,8 @@ class MembershipScreenState extends State<MembersScreen> {
                     const SizedBox(height: 10),
                     Text(
                       _isMember
-                          ? 'Thank you for joining our community.'
-                          : 'Join now to unlock exclusive features and stay connected!',
+                          ? context.loc.member_description
+                          : context.loc.non_member_description,
                       style: AppTextStyles.bodyText,
 
                       textAlign: TextAlign.center,
@@ -80,7 +80,7 @@ class MembershipScreenState extends State<MembersScreen> {
                       ElevatedButton.icon(
                         onPressed: _joinMembership,
                         icon: Icon(Icons.check_circle),
-                        label: Text('Join Now'),
+                        label: Text(context.loc.join_now),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColors.lightGreen,
                           padding: const EdgeInsets.symmetric(

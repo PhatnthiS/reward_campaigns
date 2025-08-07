@@ -247,6 +247,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Invite your friends'**
   String get share_referral_title;
+
+  /// No description provided for @member_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for joining our community.'**
+  String get member_description;
+
+  /// No description provided for @non_member_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Join now to unlock exclusive features and stay connected!'**
+  String get non_member_description;
+
+  /// No description provided for @member_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome Back, {username}'**
+  String member_title(Object username);
+
+  /// No description provided for @non_member_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Become a Member!'**
+  String get non_member_title;
+
+  /// No description provided for @join_now.
+  ///
+  /// In en, this message translates to:
+  /// **'Join Now'**
+  String get join_now;
 }
 
 class _AppLocalizationsDelegate

@@ -26,5 +26,13 @@
   "share": "แชร์",
   "copy": "คัดลอก",
   "share_referral_description": "แชร์โค้ดแนะนำของคุณและรับรางวัลเมื่อเพื่อนเข้าร่วม!",
-  "share_referral_title": "ชวนเพื่อนของคุณ"
+  "share_referral_title": "ชวนเพื่อนของคุณ",
+
+
+  "member_description": "ขอบคุณที่เข้าร่วมชุมชนของเรา",
+  "non_member_description": "เข้าร่วมตอนนี้เพื่อปลดล็อกฟีเจอร์พิเศษและเชื่อมต่อกับเรา!",
+  "member_title": "ยินดีต้อนรับกลับ, {username}",
+  "non_member_title": "เข้าร่วมเป็นสมาชิก!",
+  "join_now": "เข้าร่วมตอนนี้"
+
 }
