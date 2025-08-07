@@ -31,7 +31,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get thai => 'ไทย';
 
   @override
-  String get campaigns => 'รางวัล';
+  String get campaigns => 'แคมเปญ';
 
   @override
   String get members => 'สมาชิก';
@@ -41,4 +41,16 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get points => 'คะแนน';
+
+  @override
+  String get campaignsTitle => 'รายการแคมเปญ';
+
+  @override
+  String get membersTitle => 'สมาชิก';
+
+  @override
+  String get referTitle => 'แนะนำเพื่อน';
+
+  @override
+  String get pointsTitle => 'ติดตามคะแนน';
 }

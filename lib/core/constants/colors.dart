@@ -43,6 +43,7 @@ abstract class AppColors {
 
   // === Neutrals ===
   static const Color lightGray = Color(0xFFF5F5F5);
+  static const Color darkGray =  Color(0xFF343634);
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
 }

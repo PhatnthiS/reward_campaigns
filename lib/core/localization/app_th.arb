@@ -6,8 +6,13 @@
   "getStarted": "เริ่มต้นใช้งาน",
   "english": "อังกฤษ",
   "thai": "ไทย",
-  "campaigns": "รางวัล",
+  "campaigns": "แคมเปญ",
   "members": "สมาชิก",
   "refer": "แนะนำเพื่อน",
-  "points": "คะแนน"
+  "points": "คะแนน",
+
+  "campaignsTitle": "รายการแคมเปญ",
+  "membersTitle": "สมาชิก",
+  "referTitle": "แนะนำเพื่อน",
+  "pointsTitle": "ติดตามคะแนน"
 }

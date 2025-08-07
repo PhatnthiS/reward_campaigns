@@ -5,6 +5,6 @@ class CampaignsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: const Text('Campaign Page')));
+    return Scaffold(appBar: MyAppBar(title: context.loc.campaignsTitle));
   }
 }

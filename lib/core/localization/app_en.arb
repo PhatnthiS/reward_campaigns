@@ -6,8 +6,13 @@
   "getStarted": "Get started",
   "english": "English",
   "thai": "Thai",
-  "campaigns": "Reward",
+  "campaigns": "Campaign",
   "members": "Membership",
   "refer": "Refer Friends",
-  "points": "Point"
+  "points": "Point",
+
+  "campaignsTitle": "Campaign List",
+  "membersTitle": "Membership",
+  "referTitle": "Refer-a-Friend",
+  "pointsTitle": "Points Tracker"
 }
