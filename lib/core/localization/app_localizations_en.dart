@@ -54,4 +54,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pointsTitle => 'Points Tracker';
+
+  @override
+  String get seeAll => 'See All';
 }

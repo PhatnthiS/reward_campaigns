@@ -14,5 +14,7 @@
   "campaignsTitle": "Campaign List",
   "membersTitle": "Membership",
   "referTitle": "Refer-a-Friend",
-  "pointsTitle": "Points Tracker"
+  "pointsTitle": "Points Tracker",
+
+  "seeAll": "See All"
 }

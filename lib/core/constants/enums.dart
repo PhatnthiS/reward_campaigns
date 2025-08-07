@@ -13,3 +13,20 @@ enum Language {
     );
   }
 }
+
+enum CTAType {
+  join('Join Now'),
+  subscribe('Subscribe'),
+  redeem('Redeem Point');
+
+  final String label;
+
+  const CTAType(this.label);
+
+  static CTAType fromCode(String code) {
+    return CTAType.values.firstWhere(
+      (e) => e.name.toLowerCase() == code.toLowerCase(),
+      orElse: () => throw ArgumentError('Invalid CTA type: $code'),
+    );
+  }
+}

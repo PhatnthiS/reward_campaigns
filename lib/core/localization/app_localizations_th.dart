@@ -53,4 +53,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get pointsTitle => 'ติดตามคะแนน';
+
+  @override
+  String get seeAll => 'ดูทั้งหมด';
 }
