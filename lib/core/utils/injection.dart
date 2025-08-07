@@ -27,7 +27,7 @@ Future<void> initDependencies() async {
     () => MemberRepositoryImpl(getIt<SharedPrefsService>()),
   );
   getIt.registerLazySingleton<PointTrackingRepository>(
-        () => PointTrackingRepositoryImpl(),
+    () => PointTrackingRepositoryImpl(),
   );
 
   // Use Cases
@@ -39,7 +39,6 @@ Future<void> initDependencies() async {
   getIt.registerLazySingleton(() => JoinMemberUseCase(getIt()));
   getIt.registerLazySingleton(() => GetUsernameUseCase(getIt()));
   getIt.registerLazySingleton(() => GetPointTrackingUseCase(getIt()));
-
 
   // Blocs
   getIt.registerFactory(
@@ -59,5 +58,9 @@ Future<void> initDependencies() async {
       getUsernameUseCase: getIt(),
       joinMemberUseCase: getIt(),
     ),
+  );
+
+  getIt.registerFactory(
+    () => PointTrackingBloc(getPointTrackingUseCase: getIt()),
   );
 }
