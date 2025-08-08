@@ -43,6 +43,13 @@
 
   "current_points": "Current Points",
   "points_value": "{currentPoints} pts",
-  "transaction_history": "Transaction History"
+  "transaction_history": "Transaction History",
+
+  "language": "Language",
+  "settings": "Settings",
+  "setting_title": "Settings",
+  "clear_cache": "Clear Cache",
+  "account": "Account",
+  "change_username": "Change Username"
 
 }
