@@ -6,6 +6,7 @@ export 'check_is_member_usecase.dart';
 export 'get_username_usecase.dart';
 export 'join_member_usecase.dart';
 export 'point_tracking_usecase.dart';
+export 'clear_cache_usecase.dart';
 
 export 'package:reward_campaigns/domain/repositories/repositories.dart';
 export 'package:reward_campaigns/domain/models/models.dart';

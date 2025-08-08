@@ -8,4 +8,6 @@ abstract class OnboardingRepository {
   Future<String> getLanguage();
 
   Future<void> setLanguage(Language language);
+
+  Future<void> clearCache();
 }
