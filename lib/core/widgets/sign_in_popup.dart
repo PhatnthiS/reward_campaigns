@@ -3,6 +3,8 @@ import 'widgets.dart';
 Future<void> showSignInPopUp({
   required BuildContext context,
   required void Function(String username) onJoin,
+  required String buttonTitle,
+
 }) async {
   final TextEditingController controller = TextEditingController();
   final ValueNotifier<bool> isButtonEnabled = ValueNotifier(false);
@@ -39,7 +41,7 @@ Future<void> showSignInPopUp({
                         onJoin(username);
                       }
                     : null,
-                child: Text(context.loc.join_now),
+                child: Text(buttonTitle),
               );
             },
           ),

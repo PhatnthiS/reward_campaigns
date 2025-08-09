@@ -41,5 +41,14 @@
 
   "current_points": "คะแนนปัจจุบัน",
   "points_value": "{currentPoints} คะแนน",
-  "transaction_history": "ประวัติการทำรายการ"
+  "transaction_history": "ประวัติการทำรายการ",
+
+  "language": "ภาษา",
+  "settings": "ตั้งค่า",
+  "setting_title": "การตั้งค่า",
+  "clear_cache": "ล้างแคช",
+  "account": "บัญชีผู้ใช้",
+  "change_username": "เปลี่ยนชื่อบัญชีผู้ใช้",
+  "update": "แก้ไข",
+  "clear_cache_complete" : "ล้างแคชสำเร็จ"
 }

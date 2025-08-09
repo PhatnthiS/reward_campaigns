@@ -8,7 +8,7 @@
   "thai": "Thai",
   "campaigns": "Campaign",
   "members": "Membership",
-  "refer": "Refer Friends",
+  "refer": "Friends",
   "points": "Point",
 
   "campaignsTitle": "Campaign List",
@@ -43,6 +43,15 @@
 
   "current_points": "Current Points",
   "points_value": "{currentPoints} pts",
-  "transaction_history": "Transaction History"
+  "transaction_history": "Transaction History",
+
+  "language": "Language",
+  "settings": "Settings",
+  "setting_title": "Settings",
+  "clear_cache": "Clear Cache",
+  "account": "Account",
+  "change_username": "Change Username",
+  "update": "Update",
+  "clear_cache_complete" : "Clear cache complete"
 
 }

@@ -155,7 +155,7 @@ abstract class AppLocalizations {
   /// No description provided for @refer.
   ///
   /// In en, this message translates to:
-  /// **'Refer Friends'**
+  /// **'Friends'**
   String get refer;
 
   /// No description provided for @points.
@@ -313,6 +313,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Transaction History'**
   String get transaction_history;
+
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @setting_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get setting_title;
+
+  /// No description provided for @clear_cache.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear Cache'**
+  String get clear_cache;
+
+  /// No description provided for @account.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get account;
+
+  /// No description provided for @change_username.
+  ///
+  /// In en, this message translates to:
+  /// **'Change Username'**
+  String get change_username;
+
+  /// No description provided for @update.
+  ///
+  /// In en, this message translates to:
+  /// **'Update'**
+  String get update;
+
+  /// No description provided for @clear_cache_complete.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear cache complete'**
+  String get clear_cache_complete;
 }
 
 class _AppLocalizationsDelegate

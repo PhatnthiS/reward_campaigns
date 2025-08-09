@@ -25,4 +25,10 @@ class OnboardingRepositoryImpl implements OnboardingRepository {
   Future<void> setLanguage(Language value) async {
     await _prefsService.setLanguage(value);
   }
+
+  @override
+  Future<void> clearCache() async {
+    await _prefsService.clearCache();
+  }
+
 }

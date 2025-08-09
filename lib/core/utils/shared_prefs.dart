@@ -27,4 +27,8 @@ class SharedPrefsService {
   }
 
   String get getUsername => prefs.getString(SharedPrefsKeys.username) ?? '';
+
+  Future<void> clearCache() async{
+    await prefs.clear();
+  }
 }

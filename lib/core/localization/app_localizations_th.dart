@@ -124,4 +124,28 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get transaction_history => 'ประวัติการทำรายการ';
+
+  @override
+  String get language => 'ภาษา';
+
+  @override
+  String get settings => 'ตั้งค่า';
+
+  @override
+  String get setting_title => 'การตั้งค่า';
+
+  @override
+  String get clear_cache => 'ล้างแคช';
+
+  @override
+  String get account => 'บัญชีผู้ใช้';
+
+  @override
+  String get change_username => 'เปลี่ยนชื่อบัญชีผู้ใช้';
+
+  @override
+  String get update => 'แก้ไข';
+
+  @override
+  String get clear_cache_complete => 'ล้างแคชสำเร็จ';
 }
