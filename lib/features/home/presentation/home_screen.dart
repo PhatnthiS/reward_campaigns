@@ -27,10 +27,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final List<String> appbarTitle = [
-      context.loc.campaignsTitle,
-      context.loc.referTitle,
-      context.loc.membersTitle,
-      context.loc.pointsTitle,
+      context.loc.campaigns_title,
+      context.loc.refer_title,
+      context.loc.members_title,
+      context.loc.points_title,
       context.loc.setting_title,
     ];
 

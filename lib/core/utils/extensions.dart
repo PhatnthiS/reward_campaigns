@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:reward_campaigns/core/constants/enums.dart';
 import 'package:reward_campaigns/core/localization/app_localizations.dart';
+import 'package:reward_campaigns/domain/models/campaign_model.dart';
 import 'locale_provider.dart';
 
 extension LocalizationExt on BuildContext {
@@ -12,10 +13,7 @@ extension ProviderExt on BuildContext {
   LocaleProvider get provider =>
       Provider.of<LocaleProvider>(this, listen: false);
 
-  Locale get locale =>
-      Provider
-          .of<LocaleProvider>(this)
-          .locale;
+  Locale get locale => Provider.of<LocaleProvider>(this).locale;
 }
 
 extension PointstExtension on int {
@@ -42,6 +40,22 @@ extension PointstExtension on int {
   }
 }
 
+String ctaTextButton(BuildContext context, CTAType type) {
+  if (type == CTAType.redeem) {
+    return context.loc.redeem_now;
+  } else if (type == CTAType.subscribe) {
+    return context.loc.subscribe_now;
+  } else {
+    return context.loc.join_now;
+  }
+}
 
-
-
+String ctaJoinComplete(BuildContext context, Campaign campaign) {
+  if (campaign.ctaType == CTAType.redeem) {
+    return context.loc.redeem_success(campaign.title);
+  } else if (campaign.ctaType == CTAType.subscribe) {
+    return context.loc.subscribe_success(campaign.title);
+  } else {
+    return context.loc.join_success(campaign.title);
+  }
+}

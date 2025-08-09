@@ -26,7 +26,7 @@ class CampaignSection extends StatelessWidget {
                   //TODO : Handle OnClick See All
                 },
                 child: Text(
-                  context.loc.seeAll,
+                  context.loc.see_all,
                   style: TextStyle(color: AppColors.green),
                 ),
               ),
@@ -37,7 +37,7 @@ class CampaignSection extends StatelessWidget {
         const SizedBox(height: 16),
 
         SizedBox(
-          height: 260,
+          height: 300,
           child: ListView.separated(
             padding: const EdgeInsets.only(left: 24),
             scrollDirection: Axis.horizontal,
@@ -65,6 +65,8 @@ class CampaignCard extends StatelessWidget {
     return SizedBox(
       width: 300,
       child: Card(
+        elevation: 4,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -77,55 +79,81 @@ class CampaignCard extends StatelessWidget {
                 height: 150,
                 width: double.infinity,
                 fit: BoxFit.cover,
-                loadingBuilder:
-                    (
-                      BuildContext context,
-                      Widget child,
-                      ImageChunkEvent? loadingProgress,
-                    ) {
-                      if (loadingProgress == null) return child;
-                      return SizedBox(
-                        height: 150,
-                        child: Center(
-                          child: CircularProgressIndicator(
-                            color: AppColors.secondary,
-                          ),
-                        ),
-                      );
-                    },
-                errorBuilder:
-                    (
-                      BuildContext context,
-                      Object error,
-                      StackTrace? stackTrace,
-                    ) {
-                      return SizedBox(
-                        height: 150,
-                        child: Center(
-                          child: Icon(
-                            Icons.error_outline_outlined,
-                            size: 50,
-                            color: Colors.grey,
-                          ),
-                        ),
-                      );
-                    },
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return SizedBox(
+                    height: 150,
+                    child: Center(
+                      child: CircularProgressIndicator(
+                        color: AppColors.secondary,
+                      ),
+                    ),
+                  );
+                },
+                errorBuilder: (context, error, stackTrace) {
+                  return SizedBox(
+                    height: 150,
+                    child: Center(
+                      child: Icon(
+                        Icons.error_outline_outlined,
+                        size: 50,
+                        color: Colors.grey,
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(12),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(campaign.title, style: AppTextStyles.subtitle),
-                  const SizedBox(height: 4),
-                  Text(
-                    campaign.description,
-                    style: AppTextStyles.remark,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ],
+
+            // 💡 Use Expanded/Flexible content container
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(campaign.title, style: AppTextStyles.subtitle),
+
+                    const SizedBox(height: 4),
+
+                    // 🧠 Constrain description height
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxHeight: 50),
+                      child: Text(
+                        campaign.description,
+                        style: AppTextStyles.remark,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+
+                    const Spacer(),
+
+                    // 🔘 ElevatedButton
+                    Center(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            AppSnackBar(
+                              message: ctaJoinComplete(context, campaign),
+                              color: AppColors.accent,
+                            ),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 24,
+                            vertical: 12,
+                          ),
+                        ),
+                        child: Text(ctaTextButton(context, campaign.ctaType)),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

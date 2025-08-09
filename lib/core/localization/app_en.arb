@@ -1,50 +1,45 @@
 {
-  "welcomeTitle": "Welcome to\nReward Campaigns",
-  "welcomeSubtitle": "Explore available offers and rewards.",
-  "welcomeRemark": "Before we get started, please choose your language.",
-  "welcomeRemarkSubtitle": "You can change it later in the settings menu.",
-  "getStarted": "Get started",
+  "welcome_title": "Welcome to\nReward Campaigns",
+  "welcome_subtitle": "Explore available offers and rewards.",
+  "welcome_remark": "Before we get started, please choose your language.",
+  "welcome_remark_subtitle": "You can change it later in the settings menu.",
+  "get_started": "Get started",
   "english": "English",
   "thai": "Thai",
   "campaigns": "Campaign",
   "members": "Membership",
   "refer": "Friends",
   "points": "Point",
-
-  "campaignsTitle": "Campaign List",
-  "membersTitle": "Membership",
-  "referTitle": "Refer-a-Friend",
-  "pointsTitle": "Points Tracker",
-
-
-  "campaign_join_now": "Join Now Campaign",
+  "campaigns_title": "Campaign List",
+  "members_title": "Membership",
+  "refer_title": "Refer-a-Friend",
+  "points_title": "Points Tracker",
+  "campaign_join_now": "Join Now Campaigns",
   "campaign_subscribe": "Subscribe Campaigns",
-  "campaign_redeem": "Redeem Point Campaign",
-  "seeAll": "See All",
-
+  "campaign_redeem": "Redeem Point Campaigns",
+  "see_all": "See All",
+  "subscribe_now": "Subscribe Now",
+  "redeem_now": "Redeem Now",
+  "join_success": "Joined \"{title}\" successfully",
+  "subscribe_success": "Subscribed to \"{title}\" successfully",
+  "redeem_success": "Redeemed \"{title}\" successfully",
   "copied_to_clipboard": "Copied to clipboard",
   "share_referral_text": "Join the app with my referral: {referralLink}",
   "share": "Share",
   "copy": "Copy",
   "share_referral_description": "Share your referral code and earn rewards when they join!",
   "share_referral_title": "Invite your friends",
-
-
   "member_description": "Thank you for joining our community.",
   "non_member_description": "Join now to unlock exclusive features and stay connected!",
   "member_title": "Welcome Back, {username}",
   "non_member_title": "Become a Member!",
   "join_now": "Join Now",
-
-
   "sign_in_title": "Enter your name",
   "username_hint": "Username",
   "cancel": "Cancel",
-
   "current_points": "Current Points",
   "points_value": "{currentPoints} pts",
   "transaction_history": "Transaction History",
-
   "language": "Language",
   "settings": "Settings",
   "setting_title": "Settings",
@@ -52,6 +47,5 @@
   "account": "Account",
   "change_username": "Change Username",
   "update": "Update",
-  "clear_cache_complete" : "Clear cache complete"
-
+  "clear_cache_complete": "Clear cache complete"
 }

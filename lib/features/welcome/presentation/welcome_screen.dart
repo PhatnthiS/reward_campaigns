@@ -24,7 +24,7 @@ class WelcomeScreen extends StatelessWidget {
               SizedBox(height: 24),
 
               Text(
-                context.loc.welcomeTitle,
+                context.loc.welcome_title,
                 style: AppTextStyles.heading1,
                 textAlign: TextAlign.center,
               ),
@@ -32,7 +32,7 @@ class WelcomeScreen extends StatelessWidget {
               SizedBox(height: 16),
 
               Text(
-                context.loc.welcomeSubtitle,
+                context.loc.welcome_subtitle,
                 style: AppTextStyles.subtitle,
                 textAlign: TextAlign.center,
               ),
@@ -40,13 +40,13 @@ class WelcomeScreen extends StatelessWidget {
               SizedBox(height: 32),
 
               Text(
-                context.loc.welcomeRemark,
+                context.loc.welcome_remark,
                 style: AppTextStyles.remark,
                 textAlign: TextAlign.center,
               ),
 
               Text(
-                context.loc.welcomeRemarkSubtitle,
+                context.loc.welcome_remark_subtitle,
                 style: AppTextStyles.remark,
                 textAlign: TextAlign.center,
               ),
@@ -115,7 +115,7 @@ class WelcomeScreen extends StatelessWidget {
                   backgroundColor: AppColors.lightYellow,
                 ),
                 child: Text(
-                  context.loc.getStarted,
+                  context.loc.get_started,
                   style: AppTextStyles.buttonText,
                 ),
               ),
@@ -128,35 +128,3 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
-
-
-
-// Future<void> _clearCache(BuildContext context) async {
-//   final prefs = await SharedPreferences.getInstance();
-//   await prefs.clear(); // Clears all SharedPreferences
-//   ScaffoldMessenger.of(context).showSnackBar(
-//     SnackBar(
-//       content: const Text('Cache cleared successfully!'),
-//       backgroundColor: Colors.green,
-//     ),
-//   );
-// }
-//
-//     ElevatedButton.icon(
-// onPressed: () {
-// _clearCache(context);
-// },
-// icon: Icon(Icons.check_circle),
-// label: Text('clear cache'),
-// style: ElevatedButton.styleFrom(
-// backgroundColor: AppColors.black,
-// padding: const EdgeInsets.symmetric(
-// horizontal: 40,
-// vertical: 14,
-// ),
-// shape: RoundedRectangleBorder(
-// borderRadius: BorderRadius.circular(24),
-// ),
-// textStyle: AppTextStyles.buttonText,
-// ),
-// ),
