@@ -155,7 +155,7 @@ abstract class AppLocalizations {
   /// No description provided for @refer.
   ///
   /// In en, this message translates to:
-  /// **'Refer Friends'**
+  /// **'Friends'**
   String get refer;
 
   /// No description provided for @points.
@@ -211,6 +211,156 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See All'**
   String get seeAll;
+
+  /// No description provided for @copied_to_clipboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied to clipboard'**
+  String get copied_to_clipboard;
+
+  /// No description provided for @share_referral_text.
+  ///
+  /// In en, this message translates to:
+  /// **'Join the app with my referral: {referralLink}'**
+  String share_referral_text(Object referralLink);
+
+  /// No description provided for @share.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get share;
+
+  /// No description provided for @copy.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get copy;
+
+  /// No description provided for @share_referral_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your referral code and earn rewards when they join!'**
+  String get share_referral_description;
+
+  /// No description provided for @share_referral_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite your friends'**
+  String get share_referral_title;
+
+  /// No description provided for @member_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for joining our community.'**
+  String get member_description;
+
+  /// No description provided for @non_member_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Join now to unlock exclusive features and stay connected!'**
+  String get non_member_description;
+
+  /// No description provided for @member_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome Back, {username}'**
+  String member_title(Object username);
+
+  /// No description provided for @non_member_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Become a Member!'**
+  String get non_member_title;
+
+  /// No description provided for @join_now.
+  ///
+  /// In en, this message translates to:
+  /// **'Join Now'**
+  String get join_now;
+
+  /// No description provided for @sign_in_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your name'**
+  String get sign_in_title;
+
+  /// No description provided for @username_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Username'**
+  String get username_hint;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @current_points.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Points'**
+  String get current_points;
+
+  /// No description provided for @points_value.
+  ///
+  /// In en, this message translates to:
+  /// **'{currentPoints} pts'**
+  String points_value(Object currentPoints);
+
+  /// No description provided for @transaction_history.
+  ///
+  /// In en, this message translates to:
+  /// **'Transaction History'**
+  String get transaction_history;
+
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @setting_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get setting_title;
+
+  /// No description provided for @clear_cache.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear Cache'**
+  String get clear_cache;
+
+  /// No description provided for @account.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get account;
+
+  /// No description provided for @change_username.
+  ///
+  /// In en, this message translates to:
+  /// **'Change Username'**
+  String get change_username;
+
+  /// No description provided for @update.
+  ///
+  /// In en, this message translates to:
+  /// **'Update'**
+  String get update;
+
+  /// No description provided for @clear_cache_complete.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear cache complete'**
+  String get clear_cache_complete;
 }
 
 class _AppLocalizationsDelegate

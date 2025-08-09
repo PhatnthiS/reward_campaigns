@@ -19,5 +19,36 @@
   "campaign_join_now": "แคมเปญเข้าร่วมตอนนี้",
   "campaign_subscribe": "แคมเปญการสมัครสมาชิก",
   "campaign_redeem": "แคมเปญแลกคะแนน",
-  "seeAll": "ดูทั้งหมด"
+  "seeAll": "ดูทั้งหมด",
+
+  "copied_to_clipboard": "คัดลอกไปยังคลิปบอร์ดแล้ว",
+  "share_referral_text": "เข้าร่วมแอปด้วยโค้ดแนะนำของฉัน: {referralLink}",
+  "share": "แชร์",
+  "copy": "คัดลอก",
+  "share_referral_description": "แชร์โค้ดแนะนำของคุณและรับรางวัลเมื่อเพื่อนเข้าร่วม!",
+  "share_referral_title": "ชวนเพื่อนของคุณ",
+
+
+  "member_description": "ขอบคุณที่เข้าร่วมชุมชนของเรา",
+  "non_member_description": "เข้าร่วมตอนนี้เพื่อปลดล็อกฟีเจอร์พิเศษและเชื่อมต่อกับเรา!",
+  "member_title": "ยินดีต้อนรับกลับ, {username}",
+  "non_member_title": "เข้าร่วมเป็นสมาชิก!",
+  "join_now": "เข้าร่วมตอนนี้",
+
+  "sign_in_title": "กรุณากรอกชื่อของคุณ",
+  "username_hint": "ชื่อผู้ใช้",
+  "cancel": "ยกเลิก",
+
+  "current_points": "คะแนนปัจจุบัน",
+  "points_value": "{currentPoints} คะแนน",
+  "transaction_history": "ประวัติการทำรายการ",
+
+  "language": "ภาษา",
+  "settings": "ตั้งค่า",
+  "setting_title": "การตั้งค่า",
+  "clear_cache": "ล้างแคช",
+  "account": "บัญชีผู้ใช้",
+  "change_username": "เปลี่ยนชื่อบัญชีผู้ใช้",
+  "update": "แก้ไข",
+  "clear_cache_complete" : "ล้างแคชสำเร็จ"
 }

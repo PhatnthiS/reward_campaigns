@@ -15,6 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
     ReferFriendsScreen(),
     MembersScreen(),
     PointTrackingScreen(),
+    SettingsScreen()
   ];
 
   void _onItemTapped(int index) {
@@ -30,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
       context.loc.referTitle,
       context.loc.membersTitle,
       context.loc.pointsTitle,
+      context.loc.setting_title,
     ];
 
     return Container(
@@ -71,6 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 NavigationDestination(
                   icon: Icon(Icons.star_outline_rounded),
                   label: context.loc.points,
+                ),
+                NavigationDestination(
+                  icon: Icon(Icons.settings_outlined),
+                  label: context.loc.settings,
                 ),
               ],
             ),

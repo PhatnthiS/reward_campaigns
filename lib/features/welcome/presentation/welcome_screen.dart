@@ -128,3 +128,35 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
+
+
+
+// Future<void> _clearCache(BuildContext context) async {
+//   final prefs = await SharedPreferences.getInstance();
+//   await prefs.clear(); // Clears all SharedPreferences
+//   ScaffoldMessenger.of(context).showSnackBar(
+//     SnackBar(
+//       content: const Text('Cache cleared successfully!'),
+//       backgroundColor: Colors.green,
+//     ),
+//   );
+// }
+//
+//     ElevatedButton.icon(
+// onPressed: () {
+// _clearCache(context);
+// },
+// icon: Icon(Icons.check_circle),
+// label: Text('clear cache'),
+// style: ElevatedButton.styleFrom(
+// backgroundColor: AppColors.black,
+// padding: const EdgeInsets.symmetric(
+// horizontal: 40,
+// vertical: 14,
+// ),
+// shape: RoundedRectangleBorder(
+// borderRadius: BorderRadius.circular(24),
+// ),
+// textStyle: AppTextStyles.buttonText,
+// ),
+// ),

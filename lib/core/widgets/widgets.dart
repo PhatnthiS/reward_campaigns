@@ -1,7 +1,8 @@
 export 'text_styles.dart';
-export 'container_styles.dart';
 export 'campaign_card.dart';
 export 'app_bar.dart';
+export 'snack_bar.dart';
+export 'sign_in_popup.dart';
 
 export 'package:reward_campaigns/core/constants/constants.dart';
 export 'package:flutter/material.dart';
