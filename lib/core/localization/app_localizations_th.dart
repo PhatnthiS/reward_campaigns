@@ -9,20 +9,20 @@ class AppLocalizationsTh extends AppLocalizations {
   AppLocalizationsTh([String locale = 'th']) : super(locale);
 
   @override
-  String get welcomeTitle => 'ยินดีต้อนรับสู่\nแคมเปญรางวัล';
+  String get welcome_title => 'ยินดีต้อนรับสู่\nแคมเปญรางวัล';
 
   @override
-  String get welcomeSubtitle => 'สำรวจข้อเสนอและรางวัลที่มีให้';
+  String get welcome_subtitle => 'สำรวจข้อเสนอและรางวัลที่มีให้';
 
   @override
-  String get welcomeRemark => 'ก่อนเริ่มใช้งาน กรุณาเลือกภาษาของคุณ';
+  String get welcome_remark => 'ก่อนเริ่มใช้งาน กรุณาเลือกภาษาของคุณ';
 
   @override
-  String get welcomeRemarkSubtitle =>
+  String get welcome_remark_subtitle =>
       'คุณสามารถเปลี่ยนภาษาได้ภายหลังในเมนูการตั้งค่า';
 
   @override
-  String get getStarted => 'เริ่มต้นใช้งาน';
+  String get get_started => 'เริ่มต้นใช้งาน';
 
   @override
   String get english => 'อังกฤษ';
@@ -43,16 +43,16 @@ class AppLocalizationsTh extends AppLocalizations {
   String get points => 'คะแนน';
 
   @override
-  String get campaignsTitle => 'รายการแคมเปญ';
+  String get campaigns_title => 'รายการแคมเปญ';
 
   @override
-  String get membersTitle => 'สมาชิก';
+  String get members_title => 'สมาชิก';
 
   @override
-  String get referTitle => 'แนะนำเพื่อน';
+  String get refer_title => 'แนะนำเพื่อน';
 
   @override
-  String get pointsTitle => 'ติดตามคะแนน';
+  String get points_title => 'ติดตามคะแนน';
 
   @override
   String get campaign_join_now => 'แคมเปญเข้าร่วมตอนนี้';
@@ -64,7 +64,28 @@ class AppLocalizationsTh extends AppLocalizations {
   String get campaign_redeem => 'แคมเปญแลกคะแนน';
 
   @override
-  String get seeAll => 'ดูทั้งหมด';
+  String get see_all => 'ดูทั้งหมด';
+
+  @override
+  String get subscribe_now => 'สมัครสมาชิกทันที';
+
+  @override
+  String get redeem_now => 'แลกรับทันที';
+
+  @override
+  String join_success(Object title) {
+    return 'เข้าร่วม \"$title\" สำเร็จแล้ว';
+  }
+
+  @override
+  String subscribe_success(Object title) {
+    return 'สมัครสมาชิก \"$title\" สำเร็จแล้ว';
+  }
+
+  @override
+  String redeem_success(Object title) {
+    return 'แลกรับ \"$title\" สำเร็จแล้ว';
+  }
 
   @override
   String get copied_to_clipboard => 'คัดลอกไปยังคลิปบอร์ดแล้ว';

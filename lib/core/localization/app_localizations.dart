@@ -98,35 +98,35 @@ abstract class AppLocalizations {
     Locale('th'),
   ];
 
-  /// No description provided for @welcomeTitle.
+  /// No description provided for @welcome_title.
   ///
   /// In en, this message translates to:
   /// **'Welcome to\nReward Campaigns'**
-  String get welcomeTitle;
+  String get welcome_title;
 
-  /// No description provided for @welcomeSubtitle.
+  /// No description provided for @welcome_subtitle.
   ///
   /// In en, this message translates to:
   /// **'Explore available offers and rewards.'**
-  String get welcomeSubtitle;
+  String get welcome_subtitle;
 
-  /// No description provided for @welcomeRemark.
+  /// No description provided for @welcome_remark.
   ///
   /// In en, this message translates to:
   /// **'Before we get started, please choose your language.'**
-  String get welcomeRemark;
+  String get welcome_remark;
 
-  /// No description provided for @welcomeRemarkSubtitle.
+  /// No description provided for @welcome_remark_subtitle.
   ///
   /// In en, this message translates to:
   /// **'You can change it later in the settings menu.'**
-  String get welcomeRemarkSubtitle;
+  String get welcome_remark_subtitle;
 
-  /// No description provided for @getStarted.
+  /// No description provided for @get_started.
   ///
   /// In en, this message translates to:
   /// **'Get started'**
-  String get getStarted;
+  String get get_started;
 
   /// No description provided for @english.
   ///
@@ -164,34 +164,34 @@ abstract class AppLocalizations {
   /// **'Point'**
   String get points;
 
-  /// No description provided for @campaignsTitle.
+  /// No description provided for @campaigns_title.
   ///
   /// In en, this message translates to:
   /// **'Campaign List'**
-  String get campaignsTitle;
+  String get campaigns_title;
 
-  /// No description provided for @membersTitle.
+  /// No description provided for @members_title.
   ///
   /// In en, this message translates to:
   /// **'Membership'**
-  String get membersTitle;
+  String get members_title;
 
-  /// No description provided for @referTitle.
+  /// No description provided for @refer_title.
   ///
   /// In en, this message translates to:
   /// **'Refer-a-Friend'**
-  String get referTitle;
+  String get refer_title;
 
-  /// No description provided for @pointsTitle.
+  /// No description provided for @points_title.
   ///
   /// In en, this message translates to:
   /// **'Points Tracker'**
-  String get pointsTitle;
+  String get points_title;
 
   /// No description provided for @campaign_join_now.
   ///
   /// In en, this message translates to:
-  /// **'Join Now Campaign'**
+  /// **'Join Now Campaigns'**
   String get campaign_join_now;
 
   /// No description provided for @campaign_subscribe.
@@ -203,14 +203,44 @@ abstract class AppLocalizations {
   /// No description provided for @campaign_redeem.
   ///
   /// In en, this message translates to:
-  /// **'Redeem Point Campaign'**
+  /// **'Redeem Point Campaigns'**
   String get campaign_redeem;
 
-  /// No description provided for @seeAll.
+  /// No description provided for @see_all.
   ///
   /// In en, this message translates to:
   /// **'See All'**
-  String get seeAll;
+  String get see_all;
+
+  /// No description provided for @subscribe_now.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe Now'**
+  String get subscribe_now;
+
+  /// No description provided for @redeem_now.
+  ///
+  /// In en, this message translates to:
+  /// **'Redeem Now'**
+  String get redeem_now;
+
+  /// No description provided for @join_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined \"{title}\" successfully'**
+  String join_success(Object title);
+
+  /// No description provided for @subscribe_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribed to \"{title}\" successfully'**
+  String subscribe_success(Object title);
+
+  /// No description provided for @redeem_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Redeemed \"{title}\" successfully'**
+  String redeem_success(Object title);
 
   /// No description provided for @copied_to_clipboard.
   ///

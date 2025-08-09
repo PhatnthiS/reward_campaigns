@@ -9,21 +9,21 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get welcomeTitle => 'Welcome to\nReward Campaigns';
+  String get welcome_title => 'Welcome to\nReward Campaigns';
 
   @override
-  String get welcomeSubtitle => 'Explore available offers and rewards.';
+  String get welcome_subtitle => 'Explore available offers and rewards.';
 
   @override
-  String get welcomeRemark =>
+  String get welcome_remark =>
       'Before we get started, please choose your language.';
 
   @override
-  String get welcomeRemarkSubtitle =>
+  String get welcome_remark_subtitle =>
       'You can change it later in the settings menu.';
 
   @override
-  String get getStarted => 'Get started';
+  String get get_started => 'Get started';
 
   @override
   String get english => 'English';
@@ -44,28 +44,49 @@ class AppLocalizationsEn extends AppLocalizations {
   String get points => 'Point';
 
   @override
-  String get campaignsTitle => 'Campaign List';
+  String get campaigns_title => 'Campaign List';
 
   @override
-  String get membersTitle => 'Membership';
+  String get members_title => 'Membership';
 
   @override
-  String get referTitle => 'Refer-a-Friend';
+  String get refer_title => 'Refer-a-Friend';
 
   @override
-  String get pointsTitle => 'Points Tracker';
+  String get points_title => 'Points Tracker';
 
   @override
-  String get campaign_join_now => 'Join Now Campaign';
+  String get campaign_join_now => 'Join Now Campaigns';
 
   @override
   String get campaign_subscribe => 'Subscribe Campaigns';
 
   @override
-  String get campaign_redeem => 'Redeem Point Campaign';
+  String get campaign_redeem => 'Redeem Point Campaigns';
 
   @override
-  String get seeAll => 'See All';
+  String get see_all => 'See All';
+
+  @override
+  String get subscribe_now => 'Subscribe Now';
+
+  @override
+  String get redeem_now => 'Redeem Now';
+
+  @override
+  String join_success(Object title) {
+    return 'Joined \"$title\" successfully';
+  }
+
+  @override
+  String subscribe_success(Object title) {
+    return 'Subscribed to \"$title\" successfully';
+  }
+
+  @override
+  String redeem_success(Object title) {
+    return 'Redeemed \"$title\" successfully';
+  }
 
   @override
   String get copied_to_clipboard => 'Copied to clipboard';
