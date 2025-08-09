@@ -8,7 +8,7 @@
   "thai": "Thai",
   "campaigns": "Campaign",
   "members": "Membership",
-  "refer": "Refer Friends",
+  "refer": "Friends",
   "points": "Point",
 
   "campaignsTitle": "Campaign List",
@@ -50,6 +50,8 @@
   "setting_title": "Settings",
   "clear_cache": "Clear Cache",
   "account": "Account",
-  "change_username": "Change Username"
+  "change_username": "Change Username",
+  "update": "Update",
+  "clear_cache_complete" : "Clear cache complete"
 
 }

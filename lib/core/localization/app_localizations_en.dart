@@ -38,7 +38,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get members => 'Membership';
 
   @override
-  String get refer => 'Refer Friends';
+  String get refer => 'Friends';
 
   @override
   String get points => 'Point';
@@ -143,4 +143,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get change_username => 'Change Username';
+
+  @override
+  String get update => 'Update';
+
+  @override
+  String get clear_cache_complete => 'Clear cache complete';
 }

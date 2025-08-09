@@ -18,9 +18,14 @@ class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
     required this.languageUseCase,
     required this.clearCacheUseCase,
   }) : super(SettingsInitial()) {
+    on<GetUsernameEvent>((event, emit) async {
+      await _loadMembershipStatus(emit);
+    });
+
     on<ChangeUsernameEvent>((event, emit) async {
       emit(SettingsLoading());
       await joinMemberUseCase(event.username);
+      await _loadMembershipStatus(emit);
     });
 
     on<SwitchLanguageEvent>((event, emit) async {
@@ -28,8 +33,16 @@ class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
     });
 
     on<ClearCacheEvent>((event, emit) async {
-      await Future.delayed(Duration(seconds: 1)); // Simulate delay
       await clearCacheUseCase();
+      await _loadMembershipStatus(emit);
     });
+  }
+
+  Future<void> _loadMembershipStatus(Emitter<SettingsState> emit) async {
+    emit(SettingsLoading());
+    await Future.delayed(Duration(seconds: 2)); // Simulate delay
+    final isMember = await checkIsMemberUseCase();
+    final userName = isMember ? await getUsernameUseCase() : '';
+    emit(UserNameLoaded(userName, isMember));
   }
 }

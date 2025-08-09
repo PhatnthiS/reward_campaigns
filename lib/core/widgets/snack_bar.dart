@@ -14,18 +14,18 @@ class AppSnackBar extends SnackBar {
          content: Container(
            padding: const EdgeInsets.all(16),
            decoration: BoxDecoration(
-             color: AppColors.lightGreen,
+             color: color,
              borderRadius: BorderRadius.circular(16),
-             border: BoxBorder.all(color: AppColors.green, width: 2),
+
            ),
            child: Row(
              children: [
-               Icon(icon, color: AppColors.darkBlue),
+               Icon(icon, color: AppColors.white),
                const SizedBox(width: 12),
                Expanded(
                  child: Text(
                    message,
-                   style: TextStyle(color: AppColors.textSecondary),
+                   style: TextStyle(color: AppColors.textSecondary).copyWith(color: AppColors.white),
                  ),
                ),
              ],

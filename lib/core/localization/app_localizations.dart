@@ -155,7 +155,7 @@ abstract class AppLocalizations {
   /// No description provided for @refer.
   ///
   /// In en, this message translates to:
-  /// **'Refer Friends'**
+  /// **'Friends'**
   String get refer;
 
   /// No description provided for @points.
@@ -349,6 +349,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Change Username'**
   String get change_username;
+
+  /// No description provided for @update.
+  ///
+  /// In en, this message translates to:
+  /// **'Update'**
+  String get update;
+
+  /// No description provided for @clear_cache_complete.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear cache complete'**
+  String get clear_cache_complete;
 }
 
 class _AppLocalizationsDelegate
