@@ -3,7 +3,7 @@ part of 'settings_bloc.dart';
 abstract class SettingsEvent {}
 
 class SwitchLanguageEvent extends SettingsEvent {
-  final Language lang;
+  final String lang;
 
   SwitchLanguageEvent(this.lang);
 }

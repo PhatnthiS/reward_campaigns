@@ -112,8 +112,20 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ListTile(
                           leading: Icon(Icons.language),
                           title: Text(context.loc.language),
-                          trailing: Icon(Icons.chevron_right),
-                          onTap: () async {},
+                          trailing: Icon(Icons.change_circle_outlined),
+                          onTap: () async {
+                            final langCode = Localizations.localeOf(
+                              context,
+                            ).languageCode;
+                            final newLangCode = langCode == Language.EN.code
+                                ? Language.TH.code
+                                : Language.EN.code;
+                            context.read<SettingsBloc>().add(
+                              SwitchLanguageEvent(newLangCode),
+                            );
+
+                            context.provider.setLocale(Locale(newLangCode));
+                          },
                         ),
                       ],
                     ),

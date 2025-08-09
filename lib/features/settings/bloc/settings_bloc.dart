@@ -29,7 +29,7 @@ class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
     });
 
     on<SwitchLanguageEvent>((event, emit) async {
-      await languageUseCase.setLanguage(event.lang);
+      await languageUseCase.setLanguage(Language.fromCode(event.lang));
     });
 
     on<ClearCacheEvent>((event, emit) async {
