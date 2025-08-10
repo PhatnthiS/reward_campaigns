@@ -1,4 +1,5 @@
 import 'package:reward_campaigns/features/features.dart';
+import 'package:equatable/equatable.dart';
 
 part 'settings_event.dart';
 
