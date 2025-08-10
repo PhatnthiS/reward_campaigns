@@ -1,0 +1,80 @@
+[
+  {
+    "image": "https://images.pexels.com/photos/3184630/pexels-photo-3184630.jpeg",
+    "title": "Fitness Pro Plan",
+    "description": "Unlock access to premium fitness plans and virtual coaching designed by top trainers. Stay motivated with personalized workouts, nutrition advice, and progress tracking to reach your goals.",
+    "ctaType": "subscribe"
+  },
+  {
+    "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+    "title": "Premium Video Access",
+    "description": "Subscribe to unlock exclusive movies, series, and documentaries. Watch ad-free and enjoy content available only to subscribers on multiple devices.",
+    "ctaType": "subscribe"
+  },
+  {
+    "image": "https://images.pexels.com/photos/261909/pexels-photo-261909.jpeg",
+    "title": "Monthly Book Club",
+    "description": "Get a handpicked book delivered to your doorstep every month. Enjoy exclusive author interviews, community discussions, and early access to new releases.",
+    "ctaType": "subscribe"
+  },
+  {
+    "image": "https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg",
+    "title": "Music Streaming Plus",
+    "description": "Subscribe for unlimited music streaming with offline downloads, curated playlists, and ad-free listening. Discover new artists and enjoy your favorites anytime, anywhere.",
+    "ctaType": "subscribe"
+  },
+  {
+    "image": "https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg",
+    "title": "Online Learning Hub",
+    "description": "Subscribe to access thousands of online courses, tutorials, and certifications from top instructors worldwide. Learn new skills at your own pace and boost your career.",
+    "ctaType": "subscribe"
+  },
+  {
+    "image": "https://images.pexels.com/photos/261909/pexels-photo-261909.jpeg",
+    "title": "Digital Magazine Subscription",
+    "description": "Enjoy your favorite magazines digitally with new issues delivered monthly. Get access to exclusive articles, interviews, and interactive content.",
+    "ctaType": "subscribe"
+  },
+  {
+    "image": "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+    "title": "Alpine Adventure",
+    "description": "Join an unforgettable hiking journey through the alpine trails. Experience breathtaking views, fresh mountain air, and challenging routes suitable for all skill levels. Prepare yourself for a once-in-a-lifetime adventure.",
+    "ctaType": "join"
+  },
+  {
+    "image": "https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg",
+    "title": "Desert Escape",
+    "description": "Experience the thrill of riding across golden sand dunes at sunset. Enjoy traditional music, delicious local cuisine, and the serene desert night sky filled with stars. A perfect escape from the hustle and bustle.",
+    "ctaType": "join"
+  },
+  {
+    "image": "https://images.pexels.com/photos/357338/pexels-photo-357338.jpeg",
+    "title": "Coffee Treat",
+    "description": "Use your reward points to enjoy a free cup of premium coffee at participating cafes. Whether you like your coffee black or with a dash of flavor, treat yourself to a relaxing moment anytime.",
+    "ctaType": "redeem"
+  },
+  {
+    "image": "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg",
+    "title": "Fly High",
+    "description": "Convert your points into travel miles and fly for less. Unlock exclusive deals, premium seats, and early boarding options to make your trips more comfortable and enjoyable.",
+    "ctaType": "redeem"
+  },
+  {
+    "image": "https://images.pexels.com/photos/315638/pexels-photo-315638.jpeg",
+    "title": "Movie Night",
+    "description": "Get a free movie night by redeeming your campaign points. Choose from the latest blockbusters and enjoy popcorn on us. Bring friends or family and make it a fun outing.",
+    "ctaType": "redeem"
+  },
+  {
+    "image": "https://images.pexels.com/photos/1181397/pexels-photo-1181397.jpeg",
+    "title": "Code Bootcamp",
+    "description": "Become a developer by joining our intensive coding course. Learn the latest programming languages, tools, and best practices to launch your career in tech quickly and confidently.",
+    "ctaType": "join"
+  },
+  {
+    "image": "https://images.pexels.com/photos/1022926/pexels-photo-1022926.jpeg",
+    "title": "Art Workshop",
+    "description": "Learn painting, sketching, and digital art from professionals. Explore your creativity in a supportive environment and showcase your artwork in local exhibitions and online galleries.",
+    "ctaType": "join"
+  }
+]

@@ -1,0 +1,7 @@
+part of 'splash_bloc.dart';
+
+abstract class SplashEvent {}
+
+class CheckFirstLaunchEvent extends SplashEvent {}
+
+class GetLanguageEvent extends SplashEvent {}

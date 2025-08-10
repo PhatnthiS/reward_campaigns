@@ -1,0 +1,75 @@
+{
+  "currentPoints": 5000,
+  "transactions": [
+    {
+      "type": "earn",
+      "description": "Joined Campaign",
+      "pts": 50
+    },
+    {
+      "type": "redeem",
+      "description": "Discount Voucher",
+      "pts": 100
+    },
+    {
+      "type": "free",
+      "description": "Referral Bonus",
+      "pts": 0
+    },
+    {
+      "type": "earn",
+      "description": "Referral",
+      "pts": 100
+    },
+    {
+      "type": "redeem",
+      "description": "Gift Card",
+      "pts": 250
+    },
+    {
+      "type": "free",
+      "description": "Welcome Bonus",
+      "pts": 0
+    },
+    {
+      "type": "earn",
+      "description": "Social Media Campaign",
+      "pts": 75
+    },
+    {
+      "type": "redeem",
+      "description": "Holiday Promo",
+      "pts": 150
+    },
+    {
+      "type": "free",
+      "description": "Loyalty Reward",
+      "pts": 0
+    },
+    {
+      "type": "earn",
+      "description": "Event Participation",
+      "pts": 200
+    },
+    {
+      "type": "redeem",
+      "description": "Special Offer",
+      "pts": 300
+    },
+    {
+      "type": "free",
+      "description": "Seasonal Gift",
+      "pts": 0
+    },
+    {
+      "type": "earn",
+      "description": "Survey Completion",
+      "pts": 40
+    },
+    {
+      "type": "redeem",
+      "description": "Exclusive Deal",
+      "pts": 180
+    }
+  ]
+}
