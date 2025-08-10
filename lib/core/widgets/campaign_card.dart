@@ -20,16 +20,16 @@ class CampaignSection extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(title, style: AppTextStyles.heading2),
-              InkWell(
-                onTap: () {
-                  //TODO : Handle OnClick See All
-                },
-                child: Text(
-                  context.loc.see_all,
-                  style: TextStyle(color: AppColors.green),
-                ),
-              ),
+              Text(title, style: AppTextStyles.heading2,overflow: TextOverflow.ellipsis,),
+              // InkWell(
+              //   onTap: () {
+              //     //TODO : Handle OnClick See All
+              //   },
+              //   child: Text(
+              //     context.loc.see_all,
+              //     style: TextStyle(color: AppColors.green),
+              //   ),
+              // ),
             ],
           ),
         ),
@@ -42,7 +42,6 @@ class CampaignSection extends StatelessWidget {
             padding: const EdgeInsets.only(left: 24),
             scrollDirection: Axis.horizontal,
             itemCount: campaigns.length,
-            physics: PageScrollPhysics(),
             separatorBuilder: (_, __) => const SizedBox(width: 16),
             itemBuilder: (context, index) {
               return CampaignCard(campaign: campaigns[index]);
@@ -105,7 +104,6 @@ class CampaignCard extends StatelessWidget {
               ),
             ),
 
-            // 💡 Use Expanded/Flexible content container
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(12),

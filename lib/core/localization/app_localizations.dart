@@ -149,7 +149,7 @@ abstract class AppLocalizations {
   /// No description provided for @members.
   ///
   /// In en, this message translates to:
-  /// **'Membership'**
+  /// **'Member'**
   String get members;
 
   /// No description provided for @refer.
@@ -191,19 +191,19 @@ abstract class AppLocalizations {
   /// No description provided for @campaign_join_now.
   ///
   /// In en, this message translates to:
-  /// **'Join Now Campaigns'**
+  /// **'Join Now'**
   String get campaign_join_now;
 
   /// No description provided for @campaign_subscribe.
   ///
   /// In en, this message translates to:
-  /// **'Subscribe Campaigns'**
+  /// **'Subscribe'**
   String get campaign_subscribe;
 
   /// No description provided for @campaign_redeem.
   ///
   /// In en, this message translates to:
-  /// **'Redeem Point Campaigns'**
+  /// **'Redeem Points'**
   String get campaign_redeem;
 
   /// No description provided for @see_all.

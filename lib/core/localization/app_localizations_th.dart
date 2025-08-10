@@ -55,13 +55,13 @@ class AppLocalizationsTh extends AppLocalizations {
   String get points_title => 'ติดตามคะแนน';
 
   @override
-  String get campaign_join_now => 'แคมเปญเข้าร่วมตอนนี้';
+  String get campaign_join_now => 'เข้าร่วมตอนนี้';
 
   @override
-  String get campaign_subscribe => 'แคมเปญการสมัครสมาชิก';
+  String get campaign_subscribe => 'สมัครสมาชิก';
 
   @override
-  String get campaign_redeem => 'แคมเปญแลกคะแนน';
+  String get campaign_redeem => 'แลกคะแนน';
 
   @override
   String get see_all => 'ดูทั้งหมด';
