@@ -35,7 +35,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get campaigns => 'Campaign';
 
   @override
-  String get members => 'Membership';
+  String get members => 'Member';
 
   @override
   String get refer => 'Friends';
@@ -56,13 +56,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get points_title => 'Points Tracker';
 
   @override
-  String get campaign_join_now => 'Join Now Campaigns';
+  String get campaign_join_now => 'Join Now';
 
   @override
-  String get campaign_subscribe => 'Subscribe Campaigns';
+  String get campaign_subscribe => 'Subscribe';
 
   @override
-  String get campaign_redeem => 'Redeem Point Campaigns';
+  String get campaign_redeem => 'Redeem Points';
 
   @override
   String get see_all => 'See All';
